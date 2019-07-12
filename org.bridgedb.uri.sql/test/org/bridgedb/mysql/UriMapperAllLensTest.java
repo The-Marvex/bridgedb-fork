@@ -29,6 +29,7 @@ import org.bridgedb.utils.ConfigReader;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Tag;
 
+
 /**
  * Runs the UriMapper interface tests over SQLUriMapper class
  * 
@@ -36,7 +37,7 @@ import org.junit.jupiter.api.Tag;
  *
  * @author Christian
  */
-public class UriMapperAllLensTest extends org.bridgedb.uri.UriMapperAllLensTest {
+public class UriMapperBySysCodeIdTest extends org.bridgedb.uri.UriMapperBySysCodeIdTest {
     
     private static final String CREATOR1 = "testCreator";
     private static final String PREDICATE1 = "testMapping";
@@ -54,4 +55,5 @@ public class UriMapperAllLensTest extends org.bridgedb.uri.UriMapperAllLensTest 
         loadData();
         uriMapper = SQLUriMapper.getExisting();
     }
+            
 }
