@@ -30,6 +30,7 @@ import org.bridgedb.uri.lens.Lens;
 import org.bridgedb.utils.BridgeDBException;
 import org.bridgedb.utils.ConfigReader;
 
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.openrdf.model.Resource;
 import org.openrdf.model.impl.URIImpl;
@@ -50,6 +51,7 @@ public class UriMapperRecoverTest extends UriListenerTest {
     private static final long CREATION1 = new Date().getTime();
 
     @Test
+    @Tag("mysql")
     public void testRecover()throws BridgeDBException{
         TestSqlFactory.checkSQLAccess();
         ConfigReader.useTest();
